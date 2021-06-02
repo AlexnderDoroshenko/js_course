@@ -1,5 +1,5 @@
 // Welcome message.
-alert("hi man !!! Lets see what I prefer ?\n \\Doroshenko\\ \n \"Olexander\" \n *My phone number* \n :-) Odessa")
+alert(`hi man !!! Lets see what I prefer ?\n \\Doroshenko\\ \n \"Olexander\" \n *My phone number* \n${String.fromCodePoint(0x26D4)}Odessa`)
 // Variables definition.
 let preference = document.getElementById("plate")
 let dishesButton = document.getElementById("b1")
