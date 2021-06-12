@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 90%;
+    /* Should be removed. Only for demonstration */
+}
+
+.left,
+.right {
+    width: 25%;
+}
+
+.middle {
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container {
+    background-color: grey;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    /* Ширина макета */
+    /* Выравнивание по центру */
+}

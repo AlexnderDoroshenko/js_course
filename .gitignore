@@ -1,1 +1,3 @@
-/CourseDocs/
+/CourseDocs/**
+/test.html
+/src/css/test.css

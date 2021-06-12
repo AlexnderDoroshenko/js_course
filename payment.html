@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script Course Project</title>
+    <script async src="src/js/payment.js"></script>
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body>
+    <h2>My JavaScript project.</h2>
+
+    <div class="row">
+        <div class="column left" style="background-color:#aaa;" align="center">
+            <h2>Navigation section</h2>
+            <a href="index.html">Home page</a>
+        </div>
+        <div class="column middle" style="background-color:#bbb;" align="center">
+            <div>
+                <p><b>Enter three times the denomination of the notes and their
+                    quantity:</b>
+                    <p><b>denomination:</b><br>
+                        <input id="denomination" type="number" size="7" value=0 maxlength="number">
+                    </p>
+                    <p><b>quantity:</b><br>
+                        <input id="quantity" type="number" size="7" value=0 maxlength="number">
+                    </p>
+                    <p><b>allowed payments:</b><br>
+                        <p id="payments"></p>
+                    </p>
+                    <p><b>payment total:</b><br></p>
+                    <p id="tries">No payments yet.</p>
+                    <p><b>payment total:</b><br></p>
+                    <p id="result">Pres the button to create a payment.</p>
+                    <button id="resultButton">Pay</button>
+            </div>
+        </div>
+        <div class="column right" style="background-color:#ccc;">
+        </div>
+    </div>
+</body>
+
+</html>
