@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Доработайте сценарий. Перед выводом общей стоимости заказа узнайте у пользователя, будет ли он заказывать доставку. 
+        Если да, добавьте к стоимости заказа 40.
+    </pre>
+    <script>
+        const product1 = "Бумага офисная А4, 80 г/м2, 500 л";
+        const product2 = "Биндеры для бумаги 51 мм";
+        const product3 = "Ручка шариковая синяя";
+
+        const productPrice1 = 280.25;
+        const productPrice2 = 56;
+        const productPrice3 = 12.50;
+        const delivery = 40;
+
+        const productQuantity1 = prompt(`Укажите количество продуктов '${product1}', цена ${productPrice1}`, '0');
+        const productQuantity2 = prompt(`Укажите количество продуктов '${product2}', цена ${productPrice2}`, '0');
+        const productQuantity3 = prompt(`Укажите количество продуктов '${product3}', цена ${productPrice3}`, '0');
+        const isDelivery = confirm(`Оформить доставку к заказу ?`);
+
+        const totalPriceProduct1 = productPrice1 * productQuantity1;
+        const totalPriceProduct2 = productPrice2 * productQuantity2;
+        const totalPriceProduct3 = productPrice3 * productQuantity3;
+
+        const total = totalPriceProduct1 + totalPriceProduct2 + totalPriceProduct3;
+        if (isDelivery){
+            total += delivery
+        }
+        alert(`Общая сумма по продукту '${product1}' составляет ${totalPriceProduct1}`);
+        alert(`Общая сумма по продукту '${product2}' составляет ${totalPriceProduct2}`);
+        alert(`Общая сумма по продукту '${product3}' составляет ${totalPriceProduct3}`);
+        alert(`сумма доставки составляет ${isDelivery ? delivery : 0}`);
+        console.log("Всего " + total);
+    </script>
+</body>
+</html>

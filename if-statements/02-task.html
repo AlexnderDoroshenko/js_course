@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Доработайте сценарий. Если пользователь ввел значение равное 0 или не числовое значение для высоты и радиуса цилиндра - сообщите об ошибке.
+        Если введенные значения корректные - рассчитайте объем цилиндра.
+        Если конвертация строкового значения в целочисленное прошла не успешно, то результат конвертации NaN. Для проверок значения в условии на равенство c NaN
+        нужно использовть функцию isNaN(value), которая вернет true если значение value не является числом. Такая проверка - value == NaN, не сработает.
+    </pre>
+    <script>
+        alert("Вычисление объема цилиндра.");
+        //  V=π * r в квадрате * h
+        const r = Number(prompt("Введите радиус цилиндра"), 0);
+        const h = Number(prompt("Введите высоту цилиндра"), 0);
+        if(r in (NaN, 0) || h in (NaN, 0)){
+            alert("Values can`t be zero or Not a Number!!!")
+            const r = Number(prompt("Введите радиус цилиндра"), 0);
+            const h = Number(prompt("Введите высоту цилиндра"), 0);
+        }
+
+        const V = Math.PI * Math.pow(r, 2) * h;
+        alert(`Объем цилиндра с высотой ${h} и радиусом ${r} = ${V}`);
+    </script>
+</body>
+</html>
+

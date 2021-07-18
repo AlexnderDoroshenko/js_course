@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <pre>
+        Задание:
+        Доработайте сценарий. Если пользователь заказывает товаров больше, чем есть на складе - сообщите ему об этом. Если пользователь заказывает
+        количество товаров, не превышающее количество на складе - рассчитайте общую стоимость заказа.
+    </pre>
+    <script>
+        const productPrice = 101.5; // цена товара
+        const productQuantity = 50;  // количество единиц товара на складе
+
+        const count = Number(prompt("Сколько единиц товара Вы хотите приобрести?", '1'));
+        if (count > productQuantity){
+            alert("Вы пытаетесь заказать количество товаров больше, чем есть на складе !")
+        }else{
+            const totalSum = count * productPrice;
+            const leftInStorage = productQuantity - count;
+            alert("Общая стоимость " + totalSum);
+            alert("Количество товара останется на складе после покупки" + leftInStorage);
+        }
+        
+
+    </script>
+</body>
+</html>
